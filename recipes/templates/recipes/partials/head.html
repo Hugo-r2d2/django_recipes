@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/fontawesome.min.css"
         integrity="sha512-v8QQ0YQ3H4K6Ic3PJkym91KoeNT5S3PnDKvqnwqFD1oiqIl653crGZplPdU5KKtHjO0QKcQ2aUlQZYjHczkmGw=="
@@ -15,9 +15,9 @@
         integrity="sha512-DzC7h7+bDlpXPDQsX/0fShhf1dLxXlHuhPBkBo/5wJWRoTU6YL7moeiNoej6q3wh5ti78C57Tu1JwTNlcgHSjg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap" rel="stylesheet" />
 
     <style>
         :root {
@@ -53,7 +53,7 @@
             --color-gray-8: #323232;
             --color-gray-9: #191919;
             --font-primary: sans-serif;
-            --font-headings: 'Roboto Slab', serif;
+            --font-headings: "Roboto Slab", serif;
             --spacing-gutter-medium: 3rem;
             --spacing-gutter-large: 4rem;
         }
@@ -112,10 +112,10 @@
         /*SEARCH*/
 
         .search-form {
-            border: .2rem solid var(--color-primary-dark);
+            border: 0.2rem solid var(--color-primary-dark);
             max-width: 64rem;
             margin: 0 auto;
-            border-radius: .4rem;
+            border-radius: 0.4rem;
             position: relative;
             transition: all 300ms ease-in-out;
         }
@@ -153,7 +153,30 @@
         .search-form:focus-within .search-button {
             color: var(--color-primary);
         }
+
+        /* Search */
+
+        .recipe {
+            background: var(--color-white);
+            box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.3);
+            transition: all 300ms ease-in-out;
+            transform: scale(1);
+        }
+
+        .recipe img {
+            max-width: 100%;
+        }
+
+        .recipe-list-item {
+            max-width: 64rem;
+        }
+
+        .recipe-list-item:hover {
+            transform: scale(1.02);
+        }
     </style>
 
     <title>Recipes</title>
 </head>
+
+</html>
