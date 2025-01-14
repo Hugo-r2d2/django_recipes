@@ -158,13 +158,17 @@
         /* Card */
         .main-content-list {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
             gap: var(--spacing-gutter-medium);
             justify-content: center;
             margin: var(--spacing-gutter-medium) auto;
-            max-width: 1321px;
+            /* Remova o limite de largura */
+            max-width: none;
+            width: 100%;
+            /* Garante que ocupe 100% da largura */
             padding-top: 0;
         }
+
 
         .recipe {
             background: var(--color-white);
@@ -180,7 +184,7 @@
         }
 
         .recipe-list-item {
-            max-width: 45rem;
+            max-width: 64rem;
         }
 
         .recipe-list-item:hover {
@@ -281,6 +285,28 @@
 
         .recipe-read-more:hover {
             background-color: var(--color-debug-dark);
+        }
+
+        /* Footer */
+
+        .main-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: var(--color-primary-dark);
+            color: var(--color-white);
+            padding: var(--spacing-gutter-large);
+        }
+
+        .main-footer a {
+            color: white;
+            text-decoration: none;
+            transition: all 300ms ease-in-out;
+        }
+
+        .main-footer a:hover {
+            color: var(--color-gray-2);
+            filter: brightness(.8);
         }
     </style>
 
